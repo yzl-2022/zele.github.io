@@ -26,8 +26,29 @@
             background-size: cover;
             color: white;
         }
+        nav {
+            background-color: skyblue;
+        }
+        nav ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+        }
+        nav ul li {
+            flex: 1;
+        }
+        nav ul li a {
+            text-decoration: none;
+        }
         img {
             box-shadow: 2px 2px 5px;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
     </style>
 </head>
@@ -35,23 +56,33 @@
     <header><h1>Passion</h1></header>
     <nav>
         <ul>
-            <li><a href=""></a></li>
-            <li></li>
-            <li></li>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#debat">Débat</a></li>
+            <li><a href="#opinion">Votre opinion</a></li>
+            <li><a href="#ref">Références</a></li>
         </ul>
     </nav>
     <main>
         <article>
             <section>
-                <h3>Qu'est-ce que le Chat GPT?</h3>
+                <h3 id="intro">Qu'est-ce que le Chat GPT?</h3>
                 <img src="openAI.jfif" alt="OpenAI">
             </section>
             <section>
-                <h3>Débat: ChatAI va nous aider ou non?</h3>
+                <h3 id="debat">Débat: ChatAI va nous aider ou non?</h3>
+            </section>
+            <section>
+                <h3 id="opinion">Votre opinion</h3>
+                <form action="" name="formulaire">
+                    <label for="name">Vous aimeriez être appelé: </label>
+                    <input type="text" name="name" id="name">
+                    <label for="comment">Votre opinion</label>
+                    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                </form>
             </section>
         </article>
         <aside>
-            <h3>Références</h3>
+            <h3 id="ref">Références</h3>
             <ul>
                 <li><a href="https://fr.wikipedia.org/wiki/ChatGPT">ChatGPT</a></li>
                 <li><a href="https://openai.com/api/">OpenAI</a></li>
