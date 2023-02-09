@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voyager à travers Canada</title>
+    <title>Passion</title>
     <link rel="stylesheet" href="css/main.css">
     <style>
         body{
@@ -30,7 +30,7 @@
             color: white;
         }
         nav {
-            background-color: rgb(19, 100, 133, 0.6);
+            background-color: rgb(236, 100, 164, .8);
         }
         nav ul {
             display: flex;
@@ -44,7 +44,11 @@
         }
         nav ul li a {
             text-decoration: none;
+            color: white;
             display: block;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
         }
         main div.carousel {
             height: 50%;
@@ -59,10 +63,10 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#">À propos de nous</a></li>
-            <li><a href="#">Essayez nos produits</a></li>
+            <li><a href="#intro">À propos de nous</a></li>
+            <li><a href="#product">Essayez nos produits</a></li>
             <li><a href="#">Votre compte</a></li>
-            <li><a href="#">Contactez-nous</a></li>
+            <li><a href="#contact">Contactez-nous</a></li>
             <li><a href="#">Références</a></li>
         </ul>
     </nav>
@@ -77,14 +81,15 @@
                 <p>CatFoo vise à fournir des aliments pour animaux de compagnie de haute qualité et faciles à utiliser.</p>
             </section>
             <section>
-                <h3 id="debat">Débat: ChatAI va nous aider ou non?</h3>
-                <p>Pros</p>
-                <p></p>
-                <p>Cons</p>
-                <p></p>
+                <img src="image/logo.png" alt="CatFoo">
+                <h3 id="product">Liste de nos produits</h3>
+                <p>nourriture sec</p>
+                <p>nourriture humide</p>
+                <p>nourriture semi-humide</p>
             </section>
             <section>
-                <h3 id="opinion">Contactez-nous</h3>
+                <img src="image/logo.png" alt="CatFoo">
+                <h3 id="contact">Contactez-nous</h3>
                 <form action="" name="formulaire">
                     <label for="name">Vous aimeriez être appelé: </label>
                     <input type="text" name="name" id="name">
