@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Passion</title>
+    <title>Voyager à travers Canada</title>
+    <link rel="stylesheet" href="css/main.css">
     <style>
         body{
             padding: 0;
@@ -19,6 +20,8 @@
         header, footer {
             flex: 0;
             text-align: center;
+            background-color: lightpink;
+            width: 100%;
         }
         header {
             background-image: url(header.jpg);
@@ -41,50 +44,37 @@
         }
         nav ul li a {
             text-decoration: none;
+            display: block;
         }
-        img {
-            box-shadow: 2px 2px 5px;
-        }
-        body main article{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 0.5em 2em;
+        main div.carousel {
+            height: 50%;
+            width: auto;
         }
     </style>
 </head>
 <body>
-    <header><h1>Passion</h1></header>
+    <header>
+        <img src="image/logo-font-blan.png" alt="CatFoo">
+        <h1>Passion</h1>
+    </header>
     <nav>
         <ul>
-            <li><a href="#intro">Introduction</a></li>
-            <li><a href="#debat">Débat</a></li>
-            <li><a href="#opinion">Votre opinion</a></li>
-            <li><a href="#ref">Références</a></li>
+            <li><a href="#">À propos de nous</a></li>
+            <li><a href="#">Essayez nos produits</a></li>
+            <li><a href="#">Votre compte</a></li>
+            <li><a href="#">Contactez-nous</a></li>
+            <li><a href="#">Références</a></li>
         </ul>
     </nav>
     <main>
+        <div class="carousel">
+            <img src="image/banner1.jpg" alt="Banner">
+        </div>
         <article>
             <section>
-                <h3 id="intro">Qu'est-ce que le Chat GPT?</h3>
-                <div>
-                    <p>ChatGPT est un prototype d'agent conversationnel utilisant l'intelligence artificielle, développé par OpenAI et spécialisé dans le dialogue. L'agent conversationnel est un modèle de langage affiné par apprentissage supervisé et par apprentissage par renforcement.</p>
-                </div>
-                <div>
-                    <img src="openAI.jfif" alt="OpenAI">
-                </div>
-                <div>
-                    <p>Lancé en novembre 2022 dans une version non connectée à Internet, ChatGPT bénéfice d’une large exposition médiatique et reçoit un accueil globalement positif, bien que son exactitude factuelle soit critiquée.</p>
-                </div>
-                <div>
-                    <img src="imind.png" alt="iMind">
-                </div>
-                <div>
-                    <p>En raison de ses capacités multiples, le prototype suscite également des inquiétudes en raison des détournements possibles à des fins malveillantes, des risques de plagiat dans le monde académique et de possibles suppressions d'emplois dans certains secteurs.</p>
-                </div>
-                <div>
-                    <img src="chatbot.jpg" alt="ChatBot">
-                </div>
+                <img src="image/logo.png" alt="CatFoo">
+                <h3 id="intro">Qui nous sommes et ce que nous faisons?</h3>
+                <p>CatFoo vise à fournir des aliments pour animaux de compagnie de haute qualité et faciles à utiliser.</p>
             </section>
             <section>
                 <h3 id="debat">Débat: ChatAI va nous aider ou non?</h3>
@@ -94,7 +84,7 @@
                 <p></p>
             </section>
             <section>
-                <h3 id="opinion">Votre opinion</h3>
+                <h3 id="opinion">Contactez-nous</h3>
                 <form action="" name="formulaire">
                     <label for="name">Vous aimeriez être appelé: </label>
                     <input type="text" name="name" id="name">
@@ -106,8 +96,7 @@
         <aside>
             <h3 id="ref">Références</h3>
             <ul>
-                <li><a href="https://fr.wikipedia.org/wiki/ChatGPT">ChatGPT</a></li>
-                <li><a href="https://openai.com/api/">OpenAI</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Website_wireframe">Wireframe</a></li>
             </ul>
         </aside>
     </main>
