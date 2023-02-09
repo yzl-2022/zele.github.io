@@ -50,8 +50,12 @@
         nav ul li a:hover {
             text-decoration: underline;
         }
-        main div.carousel {
-            height: 50%;
+        main div.carousel img {
+            height: 200px;
+            width: auto;
+        }
+        main section img {
+            height: 60px;
             width: auto;
         }
     </style>
@@ -65,9 +69,9 @@
         <ul>
             <li><a href="#intro">À propos de nous</a></li>
             <li><a href="#product">Essayez nos produits</a></li>
-            <li><a href="#">Votre compte</a></li>
+            <li><a href="#compte">Votre compte</a></li>
             <li><a href="#contact">Contactez-nous</a></li>
-            <li><a href="#">Références</a></li>
+            <li><a href="#ref">Références</a></li>
         </ul>
     </nav>
     <main>
@@ -89,8 +93,18 @@
             </section>
             <section>
                 <img src="image/logo.png" alt="CatFoo">
+                <h3 id="compte">Se connecter</h3>
+                <form action="" method="post" name="login">
+                    <label for="username">Adresse électronique ou numéro de téléphone mobile</label>
+                    <input type="text" id="username" name="username">
+                    <label for="password">Entrer le mot de passe</label>
+                    <input type="text" id="password" name="password">
+                </form>
+            </section>
+            <section>
+                <img src="image/logo.png" alt="CatFoo">
                 <h3 id="contact">Contactez-nous</h3>
-                <form action="" name="formulaire">
+                <form action="" method="post" name="contact-us">
                     <label for="name">Vous aimeriez être appelé: </label>
                     <input type="text" name="name" id="name">
                     <label for="comment">Votre opinion</label>
