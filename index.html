@@ -7,6 +7,9 @@
     <title>Passion</title>
     <link rel="stylesheet" href="css/main.css">
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body{
             padding: 0;
             margin: 0;
@@ -50,13 +53,25 @@
         nav ul li a:hover {
             text-decoration: underline;
         }
+        main div.carousel {
+            margin: auto;
+            box-shadow: 4px 4px 8px;
+        }
         main div.carousel > img {
             height: 200px;
             width: auto;
         }
         main article section > img {
-            height: 50px;
+            height: 60px;
             width: auto;
+        }
+        main article section form input {
+            width: 100%;
+            padding: 1em;
+        }
+        main article section form label {
+            display: block;
+            width: 100%;
         }
     </style>
 </head>
