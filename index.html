@@ -54,24 +54,25 @@
             text-decoration: underline;
         }
         main div.carousel {
-            margin: auto;
-            box-shadow: 4px 4px 8px;
+            margin-left: 20%;
+            margin-right: 20%;
+            width: 60%;
         }
         main div.carousel > img {
-            height: 200px;
-            width: auto;
+            width: 100%;
+            height: auto;
         }
         main article section > img {
             height: 60px;
             width: auto;
         }
-        main article section form input {
-            width: 100%;
-            padding: 1em;
+        main article section form input, textarea {
+            width: 50%;
+            margin: 0.5em 1em;
         }
         main article section form label {
             display: block;
-            width: 100%;
+            margin: 0.5em 1em;
         }
     </style>
 </head>
@@ -102,10 +103,11 @@
             <section>
                 <img src="image/logo.png" alt="CatFoo">
                 <h3 id="product">Liste de nos produits</h3>
-                <p>nourriture sec</p>
-                <p>nourriture humide</p>
-                <p>nourriture semi-humide</p>
-            </section>
+                <ul>
+                    <li>nourriture sec</li>
+                    <li>nourriture humide</li>
+                    <li>nourriture semi-humide</li>
+                </ul>
             <section>
                 <img src="image/logo.png" alt="CatFoo">
                 <h3 id="compte">Se connecter</h3>
