@@ -136,6 +136,20 @@
             </ul>
         </aside>
     </main>
-    <footer>Tous droits réservés. Dernière mise à jour février 2023.</footer>
+    <footer>Tous droits réservés. Dernière mise à jour </footer>
+    <script>
+        'use strict';
+        function getDate(){
+            let dd = new Date();
+
+            let y = dd.getFullYear();
+            let m = dd.getMonth() + 1;
+            let d = dd.getDate();
+
+            return ': '+y+'-'+m+'-'+d+'.';
+        }
+        let f = document.querySelector('footer');
+        f.innerText+=getDate();
+    </script>
 </body>
 </html>
