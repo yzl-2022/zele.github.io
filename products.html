@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="31D-stampee">
+    <title>CATÉGORIES</title>
+    <link rel="stylesheet" href="assets/css/products.css">
+</head>
+<body>
+    <!--top-menu-->
+    <nav class="wrapper">
+        <ul>
+            <li><a href="#">CONNEXION</a></li>
+            <li><a href="#">INSCRIPTION</a></li>
+            <li><a href="#">CONTACTEZ-NOUS</a></li>
+            <li><a href="#"><img src="assets/icons/language.svg" alt="language"><span class="active">FR</span></a></li>
+        </ul>
+    </nav>
+    <!--header--main-menu-->
+    <header class="wrapper">
+        <!--logo-->
+        <div class="logo">
+            <h1><a href="index.html">logo</a></h1>
+        </div>
+        <!--nav-->
+        <div class="headerNav">
+            <ul>
+                <li><a class="active" href="products.html">CATÉGORIES</a></li>
+                <li><a href="#">ENCHÈRES</a></li>
+                <li><a href="#">SUR NOUS</a></li>
+            </ul>
+        </div>
+        <!--search-->
+        <div class="headerSearch">
+            <input type="text" placeholder="search">
+            <a href="#"></a>
+        </div>
+        <!--cart-->
+        <div class="notification">
+            <a href="#"></a>
+            <div class="number">5</div>
+        </div>
+    </header>
+    <!--breadcrumb-->
+    <aside class="breadcrumb wrapper">
+        <ul>
+            <li><a href="index.html">ACCUEIL</a> ></li>
+            <li><a class="active" href="products.html">CATÉGORIES</a></li>
+        </ul>
+    </aside>
+    <!--main-->
+    <main class="wrapper">
+        <!--filter-->
+        <section class="filter">
+            <!--form of the filter-->
+            <form action="" name="filter">
+                <h2>Sélection</h2>
+                <label for="continent">Continent</label>
+                <input type="text" name="continent" id="continent" placeholder="choisissez dans la liste" list="liste-continents">
+                <label for="pay">Pay</label>
+                <input type="text" name="pay" id="pay" placeholder="choisissez dans la liste" list="liste-pays">
+                <label for="date">Se terminer avant:</label>
+                <input type="date" name="date" id="date">
+                <fieldset>
+                    <legend>Fourchette de prix :</legend>
+                    <label for="minP">Minimum</label>
+                    <input type="text" name="minP" id="minP" placeholder="9.99">
+                    <label for="maxP">Maximum</label>
+                    <input type="text" name="maxP" id="maxP" placeholder="999.99">
+                </fieldset>
+                <label for="condition">Condition</label>
+                <select id="condition" name="condition[]">
+                    <option value="Bonne">Bonne</option>
+                    <option value="Moyenne">Moyenne</option>
+                    <option value="Mauvaise">Mauvaise</option>
+                </select>
+                <input type="reset" value="Rétablir">
+                <input type="submit" value="Soumettre">
+            </form>
+        </section>
+        <!--list of products-->
+        <section class="content">
+            <div class="grid"><button id="grid-list">Grille / Liste</button></div>
+            <ul id="products">
+                <li>
+                    <article>
+                        <a href="#">
+                            <div class="pic"><img src="assets/images/stamp1.webp" alt="item1"></div>
+                            <div class="txt">
+                                <h3>Produit avec un nom long long (789O).long long long long long long ago.</h3>
+                                <p>The title is more than 2 lines but the rest is hidden.</p>
+                                <div class="price">
+                                    <p>$<span>48.37</span></p>
+                                    <p><a href="#"><img src="assets/icons/star.svg" alt="star"><span>4.5</span></a></p>
+                                </div>
+                                <a class="panier" href="#">AJOUTER AU PANIER</a>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <a href="#">
+                            <div class="pic"><img src="assets/images/stamp3.webp" alt="item2"></div>
+                            <div class="txt">
+                                <h3>Produit du nom long, hfksh ffrrdg && sjfnv (vdfghdnv ## 55) dfksdhr sekrsiuetxliehcnkjfhszdf.</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur aperiam eveniet nemo voluptas ratione distinctio beatae nihil facilis doloribus reiciendis quae accusamus laboriosam, nostrum iusto tenetur mollitia aspernatur. Consectetur, tempore.</p>
+                                <div class="price">
+                                    <p>$<span>99.99</span></p>
+                                    <p><a href="#"><img src="assets/icons/star.svg" alt="star"><span>4.5</span></a></p>
+                                </div>
+                                <a class="panier" href="#">AJOUTER AU PANIER</a>
+                            </div>
+                        </a>
+                        <div class="promo">Offre à durée limitée</div>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <a href="#">
+                            <div class="pic"><img src="assets/images/stamp2.webp" alt="item3"></div>
+                            <div class="txt">
+                                <h3>Produit du nom court</h3>
+                                <p>One line description.</p>
+                                <div class="price">
+                                    <p>$<span>99.99</span></p>
+                                    <p><a href="#"><img src="assets/icons/star.svg" alt="star"><span>4.5</span></a></p>
+                                </div>
+                                <a class="panier" href="#">AJOUTER AU PANIER</a>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <a href="#">
+                            <div class="pic"><img src="assets/images/stamp5.webp" alt="item4"></div>
+                            <div class="txt">
+                                <h3>Produit du nom court</h3>
+                                <p>One line description.</p>
+                                <div class="price">
+                                    <p>$<span>99.99</span></p>
+                                    <p><a href="#"><img src="assets/icons/star.svg" alt="star"><span>4.5</span></a></p>
+                                </div>
+                                <a class="panier" href="#">AJOUTER AU PANIER</a>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <a href="#">
+                            <div class="pic"><img src="assets/images/stamp6.webp" alt="item5"></div>
+                            <div class="txt">
+                                <h3>Produit du nom court</h3>
+                                <p>One line description.</p>
+                                <div class="price">
+                                    <p>$<span>99.99</span></p>
+                                    <p><a href="#"><img src="assets/icons/star.svg" alt="star"><span>4.5</span></a></p>
+                                </div>
+                                <a class="panier" href="#">AJOUTER AU PANIER</a>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <a href="#">
+                            <div class="pic"><img src="assets/images/stamp4.webp" alt="item6"></div>
+                            <div class="txt">
+                                <h3>Produit du nom court</h3>
+                                <p>One line description.</p>
+                                <div class="price">
+                                    <p>$<span>99.99</span></p>
+                                    <p><a href="#"><img src="assets/icons/star.svg" alt="star"><span>4.5</span></a></p>
+                                </div>
+                                <a class="panier" href="#">AJOUTER AU PANIER</a>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <!--recently viewed items-->
+    <section class="wrapper">
+        <!--title-->
+        <div class="title">
+            <div class="left"><h3>Articles consultés récemment</h3></div>
+            <div class="right"><a href="#">montre plus ></a></div>
+        </div>
+        <!--content-->
+        <div class="content">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="pic"><img src="assets/images/stamp6.webp" alt="item7"></div>
+                        <div class="txt">
+                            <h3>Stampee special collection 1/34</h3>
+                            <p>one line description</p>
+                            <div class="price">
+                                <p>$<span>48.37</span></p>
+                                <p><a href="#"><img src="assets/icons/star.svg" alt="star"><span>4.5</span></a></p>
+                            </div>
+                            <a class="panier" href="#">AJOUTER AU PANIER</a>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="pic"><img src="assets/images/stamp2.webp" alt="item8"></div>
+                        <div class="txt">
+                            <h3>Colorful butterflies by Magyar Posta (1 pair)</h3>
+                            <p>How to decide height of this section? Is 40px enough?</p>
+                            <div class="price">
+                                <p>$<span>100.00</span></p>
+                                <p><a href="#"><img src="assets/icons/star.svg" alt="star"><span>4.5</span></a></p>
+                            </div>
+                            <a class="panier" href="#">AJOUTER AU PANIER</a>
+                        </div>
+                    </a>
+                    <div class="promo">MEILLEURE VENTE</div>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="pic"><img src="assets/images/stamp3.webp" alt="item9"></div>
+                        <div class="txt">
+                            <h3>Produit de forme irrégulière</h3>
+                            <p>one line description</p>
+                            <div class="price">
+                                <p>$<span>100.00</span></p>
+                                <p><a href="#"><img src="assets/icons/star.svg" alt="star"><span>4.5</span></a></p>
+                            </div>
+                            <a class="panier" href="#">AJOUTER AU PANIER</a>
+                        </div>
+                    </a>
+                    <div class="promo">SOLDE</div>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="pic"><img src="assets/images/stamp4.webp" alt="item0"></div>
+                        <div class="txt">
+                            <h3>Annual celebration stamp collection 1/15</h3>
+                            <p>description dd description description description dd.</p>
+                            <div class="price">
+                                <p>$<span>55.55</span></p>
+                                <p><a href="#"><img src="assets/icons/star.svg" alt="star"><span>4.5</span></a></p>
+                            </div>
+                            <a class="panier" href="#">AJOUTER AU PANIER</a>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!--footer-->
+    <footer class="wrapper">
+        <!--about-->
+        <div>
+            <dl>
+                <dt>À PROPOS DE NOUS</dt>
+                <dd><a href="#">Général</a></dd>
+                <dd><a href="#">Sur Stampee</a></dd>
+                <dd><a href="#">Annonces</a></dd>
+                <dd><a href="#">Visitez-nous</a></dd>
+            </dl>
+        </div>
+        <!--sitemap-->
+        <div>
+            <dl>
+                <dt>PLAN DU SITE</dt>
+                <dd><a class="active" href="#">Accueil</a></dd>
+                <dd><a href="#">Timbres</a></dd>
+                <dd><a href="#">Enchères</a></dd>
+                <dd><a href="#">Sur nous</a></dd>
+            </dl>
+        </div>
+        <!--moreinfo-->
+        <div>
+            <dl>
+                <dt>PLUS D'INFORMATION</dt>
+                <dd><a href="#">Politique de confidentialité</a></dd>
+                <dd><a href="#">Pré-enchères</a></dd>
+                <dd><a href="#">Pendant enchères</a></dd>
+                <dd><a href="#">Après enchères</a></dd>
+            </dl>
+        </div>
+        <!--contact-->
+        <div>
+            <dl>
+                <dt>CONTACT</dt>
+                <dd>Stampee LTD</dd>
+                <dd>3-3333 PIE-IX</dd>
+                <dd>Montréal, QC</dd>
+                <dd><a href="#">services@stampee.ca</a></dd>
+            </dl>
+            <ul>
+                <li><a href="#"><img src="assets/icons/facebook.svg" alt="facebook"></a></li>
+                <li><a href="#"><img src="assets/icons/twitter.svg" alt="twitter"></a></li>
+                <li><a href="#"><img src="assets/icons/youtube.svg" alt="youtube"></a></li>
+                <li><a href="#"><img src="assets/icons/instagram.svg" alt="instagram"></a></li>
+            </ul>
+        </div>
+    </footer>
+	<datalist id="liste-continents">
+		<option value="Afrique"></option>
+		<option value="Amérique"></option>
+		<option value="Antarctique"></option>
+        <option value="Asie"></option>
+        <option value="Europe"></option>
+        <option value="Océanie"></option>
+	</datalist>
+	<datalist id="liste-pays">
+        <option value="Allemagne"></option>
+        <option value="Australie"></option>
+        <option value="Brésil"></option>
+		<option value="Canada"></option>
+        <option value="Chine"></option>
+		<option value="Danemark"></option>
+        <option value="Égypte"></option>
+        <option value="États-Unis"></option>
+		<option value="France"></option>
+        <option value="Inde"></option>
+        <option value="Japon"></option>
+        <option value="Mexique"></option>
+        <option value="Royaume-Uni"></option>
+        <option value="Russie"></option>
+        <option value="Suisse"></option>
+        <option value="Viêt Nam"></option>
+	</datalist>
+    <script> /*Do I need a seperate .js file?*/
+        const btn = document.getElementById('grid-list');
+        const parentNode = document.getElementById('products');
+
+        let list = parentNode.children;
+
+        btn.addEventListener('click', function(){
+            for (let i=0 ; i <list.length ; i++ ){
+                list[i].classList.toggle('list');
+            }
+        });
+        /*the effect is not ideal, but this is the best I can think of at the moment*/
+    </script>
+</body>
+</html>
