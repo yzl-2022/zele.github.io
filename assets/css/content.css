@@ -87,5 +87,6 @@
     background-color: var(--red);
     border-radius: 0.5rem;
     font-size: var(--h6);
+    font-family: 'Open Sans', sans-serif;
     padding: 5px;
 }
